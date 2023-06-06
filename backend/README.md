@@ -1,42 +1,24 @@
-# Hatiku - Cardiovascular Health Webapp
-
-Link (website, API, video youtube, canva, repositories)
-https://linktr.ee/PAWKelompok16
-
-Sebuah web application untuk mendiagnosis penyakit cardiovascular pada user. Diharapkan dengan adanya diagnosis dini, user dapat memberikan penanganan lebih cepat jika memang terindikasi penyakit cardivascular. Dengan begitu kemungkinan untuk sembuh akan lebih besar. 
-
-*Source code API AI ada di branch Hatiku-ML
-
-## Anggota Kelompok :
-
-1. Freddy Tanusina - 20/456841/TK/50665 
-2. Ahmad Yazid Naufan - 20/460537/TK/51126
-3. Pramudya Kusuma Hardika - 20/460558/TK/51147
-4. Putri Ayu Shintaningrum - 20/460559/TK/51148
-5. Ryan Kusnadi - 20/463613/TK/51605
-
-#NOTE: <url> adalah link API yang terlampir di linktree, atau ip adress jika anda me-run server secara lokal.
-
 # Cara run server-CRUD
+
 1. Sebelum kita menjalankan server, jalankan npm install untuk menginstall dependency yang ada agar API berjalan dengan baik
 2. Setelah selesai menginstall, jalankan perintah npm start untuk menjalankan server API.
 3. Server sukses berjalan bila pada console terdapat log Database Connected.
 4. Server dapat diakses pada <url/>
 5. Untuk mendapatkan data dari API (GET), hanya perlu menuju <url/>/patients
 6. Untuk melakukan POST, perlu menyeragamkan JSON menjadi format seperti berikut ini :
-	"name": "ryan",
-        "age": 18,
-        "height": 165,
-        "weight": 55,
-        "gender": 1,
-        "ap_hi": 130,
-        "ap_lo": 85,
-        "cholestrol": 1,
-        "gluc": 1,
-        "smoke": false,
-        "alco": false,
-        "active": true,
-        "cardio": false,
+   "name": "ryan",
+   "age": 18,
+   "height": 165,
+   "weight": 55,
+   "gender": 1,
+   "ap_hi": 130,
+   "ap_lo": 85,
+   "cholestrol": 1,
+   "gluc": 1,
+   "smoke": false,
+   "alco": false,
+   "active": true,
+   "cardio": false,
 
 setelah itu dapat dikirimkan menuju <url/>/patients
 
@@ -49,11 +31,12 @@ sklearn
 uvicorn
 
 # Cara run server-diagnosis
+
 1. install semua dependencies
-3. run command: "uvicorn apps.server-diagnosis.main:app --reload" di console.
-*<url> https://cvd-diagnosis-api.herokuapp.com/diagnose/ atau http://127.0.0.1:8000/diagnose/
+2. run command: "uvicorn apps.server-diagnosis.main:app --reload" di console. \*<url> https://cvd-diagnosis-api.herokuapp.com/diagnose/ atau http://127.0.0.1:8000/diagnose/
 
 Dokumentasi path server-diagnosis:
+
 1. <url>/ -> (GET) berisi home, message cara penggunaan.
 2. <url>/diagnosis/ -> (POST) menerima JSON berisi data pengguna, dan memberikan output diagnosis.
 3. <url>/retrain/ -> (POST) menarik data dari mongoDB dan meretrain model ML.
@@ -79,7 +62,7 @@ Input /diagnosis/ :
 "faintings":1,
 "fatigue":1,
 "swollen_ankles":1,
-"drastic_weight_changes":1, 
+"drastic_weight_changes":1,
 "bloating":1,
 "loss_of_appetite":1,
 "dizziness_confusion":1,
