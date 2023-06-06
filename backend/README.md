@@ -33,7 +33,7 @@ uvicorn
 # Cara run server-diagnosis
 
 1. install semua dependencies
-2. run command: "uvicorn apps.server-diagnosis.main:app --reload" di console. \*<url> https://cvd-diagnosis-api.herokuapp.com/diagnose/ atau http://127.0.0.1:8000/diagnose/
+2. run command: "uvicorn apps.server-diagnosis.main:app --reload" di console. \*<url> http://127.0.0.1:8000/diagnose/
 
 Dokumentasi path server-diagnosis:
 
