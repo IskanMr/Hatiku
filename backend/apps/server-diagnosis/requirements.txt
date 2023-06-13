@@ -3,6 +3,6 @@ experta
 pandas
 numpy
 pymongo
-sklearn
+scikit-learn
 pydantic
 typing
