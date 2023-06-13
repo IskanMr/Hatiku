@@ -2,4 +2,5 @@ fastapi
 experta
 pandas
 numpy
+pymongo
 sklearn
